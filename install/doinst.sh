@@ -1,0 +1,8 @@
+( cd bin ; rm -rf tar-1.34 )
+( cd bin ; ln -sf tar tar-1.34 )
+( cd etc ; rm -rf rmt )
+( cd etc ; ln -sf /usr/libexec/rmt rmt )
+( cd sbin ; rm -rf rmt )
+( cd sbin ; ln -sf /usr/libexec/rmt rmt )
+( cd usr/bin ; rm -rf tar )
+( cd usr/bin ; ln -sf /bin/tar tar )
